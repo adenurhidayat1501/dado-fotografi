@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dado Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <header class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0 z-10">
+      <h1 class="text-2xl font-bold tracking-tight">📸 DadoSnap</h1>
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#home" class="hover:text-indigo-600">Home</a>
+        <a href="#gallery" class="hover:text-indigo-600">Gallery</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?photography,landscape')">
+      <div class="bg-black bg-opacity-50 p-10 rounded-xl text-white text-center max-w-lg">
+        <h2 class="text-4xl font-bold mb-4">Potret Dunia Lewat Lensa</h2>
+        <p class="text-lg">Selamat datang di dunia visual Dado. Setiap klik, setiap cahaya, punya cerita.</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-16 px-4 md:px-20 bg-white">
+      <h2 class="text-3xl font-bold mb-10 text-center">Galeri Terbaru</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://source.unsplash.com/random/800x600?mountain" class="rounded-xl shadow-md hover:scale-105 transition duration-300" />
+        <img src="https://source.unsplash.com/random/800x600?city" class="rounded-xl shadow-md hover:scale-105 transition duration-300" />
+        <img src="https://source.unsplash.com/random/800x600?portrait" class="rounded-xl shadow-md hover:scale-105 transition duration-300" />
+        <!-- Tambahin sesukamu -->
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 bg-gray-50 px-4 md:px-20">
+      <h2 class="text-3xl font-bold mb-6 text-center">Tentang Dado</h2>
+      <div class="max-w-3xl mx-auto text-center text-lg leading-relaxed">
+        <p>Hai, gue Dado. Fotografer berbadan besar, tapi hati selembut bokeh di aperture f/1.2 😎.</p>
+        <p>Passion gue di dunia visual storytelling bikin gue suka menjelajah tempat, momen, dan ekspresi lewat kamera.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-4 md:px-20 bg-indigo-600 text-white">
+      <h2 class="text-3xl font-bold mb-6 text-center">Kontak</h2>
+      <div class="max-w-xl mx-auto">
+        <form class="space-y-4">
+          <input type="text" placeholder="Nama Kamu" class="w-full p-3 rounded-lg text-gray-900" />
+          <input type="email" placeholder="Email" class="w-full p-3 rounded-lg text-gray-900" />
+          <textarea placeholder="Pesan" rows="4" class="w-full p-3 rounded-lg text-gray-900"></textarea>
+          <button class="bg-white text-indigo-600 font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-200 text-gray-700 text-sm">
+      © 2025 DadoSnap. All rights reserved.
+    </footer>
+
+  </body>
+</html>
